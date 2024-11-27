@@ -13,7 +13,7 @@ private:
 	struct Node {
 		T data;
 		Node* next;
-		Node(T value) : data(value), next(nullptr);
+		Node(T value) : data(value), next(nullptr) {}
 	};
 
 	Node* top;
@@ -23,7 +23,7 @@ private:
 public:
 
 	~Stack();
-	Stack() : top(nullptr), stackSize(0);
+	Stack() : top(nullptr), stackSize(0) {}
 
 	void push(T value); // Add an element to the top
 	T pop();            // Remove and return the top element
